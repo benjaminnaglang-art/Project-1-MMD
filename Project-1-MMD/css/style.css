@@ -120,3 +120,14 @@ footer {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.galleri-container {
+    margin: 2em 5em;
+}
+
+.galleri {
+    aspect-ratio: 1/1;
+    width: 24%;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 0.5em;
