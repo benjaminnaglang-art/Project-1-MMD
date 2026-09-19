@@ -109,18 +109,6 @@ footer {
     color: #ccc;
 }
 
-@media only screen and (max-width: 768px) {
-    section {
-        margin-bottom: 0;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .navbar__menu {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-}
 
 .titel {
     text-align: center;
