@@ -50,12 +50,12 @@ header {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #70ff7c;
+    background-color: #e86f6f;
     transition: width 0.25s ease;
 }
 
 .navbar__link:hover {
-    color: #70ff73;
+    color: #e86f6f;
 }
 
 .navbar__link:hover::after {
