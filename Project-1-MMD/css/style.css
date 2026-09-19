@@ -109,7 +109,6 @@ footer {
     color: #ccc;
 }
 
-
 .titel {
     text-align: center;
     width: 100%;
@@ -123,7 +122,7 @@ footer {
 
 .galleri {
     aspect-ratio: 1/1;
-    width: 24%;
+    width: 25%;
     object-fit: cover;
     border-radius: 15px;
     padding: 0.5em;
