@@ -1,3 +1,4 @@
+
 * body {
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
@@ -11,7 +12,6 @@ img{
 }
 
 header {
-    padding: 1em;
     text-align: center;
     color: #fff;
 }
@@ -21,10 +21,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 0 1.5rem;
-    height: 100px;
+    height: 70px;
     background-color: #005232;
-    border-radius: 12px;
-    margin: 1rem;
 }
 
 .navbar__menu {
@@ -68,7 +66,31 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 2em 2em;
+}
+
+.hero {
+    aspect-ratio: 16 / 7;
+    max-height: 400px;
+    min-height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../img/banner.jpg");
+        height: 100%;
+        width: 100%;
+    background-size: cover;
+    background-position: center 50%;
     padding: 2em;
+    margin-top: 0;
+}
+
+.hero h1,
+.hero p {
+    color: #fff;
 }
 
 section {
@@ -116,14 +138,20 @@ footer {
     margin: 0 auto;
 }
 
+.galleri-section {
+    width: 100%;
+    max-width: 900px;
+}
+
 .galleri-container {
-    margin: 2em 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75em;
 }
 
 .galleri {
-    aspect-ratio: 1/1;
-    width: 25%;
+    width: 100%;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 15px;
-    padding: 0.5em;
 }
