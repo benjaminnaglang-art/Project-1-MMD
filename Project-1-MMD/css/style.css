@@ -19,10 +19,16 @@ header {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 1.5rem;
     height: 70px;
     background-color: #005232;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
+
 }
 
 .navbar__menu {
@@ -122,13 +128,18 @@ footer {
     background-color: #005232;
     color: #fff;
     padding: 1em;
-    text-align: center;
+    text-align: right;
 }
 
 .footer {
     text-align: center;
     font-size: 12px;
     color: #ccc;
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
 }
 
 .mere-info {
@@ -176,3 +187,25 @@ footer {
     filter: brightness(0.7);
 }
 
+.hero-omos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.titel {
+    flex: 1;
+    min-width: 280px;
+}
+
+.video {
+    flex: 1;
+    min-width: 280px;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
