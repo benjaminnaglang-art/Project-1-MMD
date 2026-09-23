@@ -115,7 +115,7 @@ h1, h2 {
 }
 
 p {
-    color: #040404;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -143,6 +143,9 @@ footer {
     width: auto;
 }
 
+h4 {
+    font-size: 20px;
+}
 .mere-info {
     color: white;
     text-align: left;
@@ -183,6 +186,7 @@ footer {
     aspect-ratio: 3 / 4;
     object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 15px;
 }
 
 .galleri-link {
