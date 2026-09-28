@@ -103,41 +103,39 @@ main {
   max-width: 1000px;
   margin: auto;
   padding: 2em;
-  gap: 32px; 
+  gap: 20px;
+  opacity: 40%;
 }
 
 .search-box input {
   width: 100%;
   padding: 8px 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 0px solid white;
+  border-radius: 20px;
   outline: none;
-  font-style: italic;
 }
 
-.search-box button {
+.book-nu {
   display: inline-block;
-  padding: 8px 16px;
-  background-color: #8A9A86;
-  color: white;
-  border: 1px solid #8A9A86;
-  border-radius: 6px;
-  cursor: pointer;
-  border-radius: 6px;
   font-weight: 600;
+  padding: 10px 20px;
+  background: #8A9A86;
+  color: #202020;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 0px solid white;
 }
 
-.search-box button:hover {
+.book-nu:hover {
   background-color: #5d9a4e;
 }
-
 
 .book-knap {
     display: inline-block;
     padding: 10px 20px;
     background: #8A9A86;
-    color: #F9F6F0;
+    color: #202020;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
@@ -162,13 +160,13 @@ main {
 }
 
 h1, h2 {
-    color: #000000;
+    color: #202020;
     margin-bottom: 10px;
     text-align: center;
 }
 
 p {
-    color: black;
+    color: 202020;
     margin-bottom: 20px;
 }
 
@@ -224,17 +222,40 @@ h4 {
 
 .galleri-section {
     width: 100%;
-    max-width: 900px;
+    max-width: auto;
 }
 
+
 .galleri-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
     gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 12px;
+}
+
+.galleri-box {
+    flex: 0 0 250px;
+    scroll-snap-align: start;
+    position: relative;
+    background-color: #8A9A86;
+    border-radius: 15px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.galleri-box-tekst{
+    color:#202020
+}
+
+.galleri-box .galleri-link {
+    margin-top: auto;
 }
 
 .galleri {
-    display: block;
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
