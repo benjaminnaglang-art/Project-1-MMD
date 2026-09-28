@@ -166,7 +166,7 @@ h1, h2 {
 }
 
 p {
-    color: 202020;
+    color: #202020;
     margin-bottom: 20px;
 }
 
@@ -238,6 +238,7 @@ h4 {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-bottom: 12px;
+    
 }
 
 .galleri-box {
@@ -249,11 +250,11 @@ h4 {
     padding: 8px;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
 }
 
 .galleri-box-tekst{
-    color:#202020
+    color:#202020;
+    font-size: 15px;
 }
 
 .galleri-box .galleri-link {
@@ -302,4 +303,54 @@ h4 {
     display: block;
     border-radius: 20px;
     padding: 5px;
+}
+
+.kontakt-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.kontakt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1.5em;
+    background-color: #8A9A86;
+    border-radius: 15px;
+}
+
+.kontakt-form label {
+    font-weight: 600;
+    color: #202020;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+    width: 95%;
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #202020;
+    background-color: #F9F6F0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+
+.kontakt-form input:focus,
+.kontakt-form textarea:focus {
+    border-color: #873F2B;
+}
+
+.kontakt-form textarea {
+    resize: vertical;
+}
+
+.kontakt-form button {
+    align-self: flex-start;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }

@@ -22,20 +22,25 @@
         <section class="titel" id="home">
             <h1>Kontakt</h1>
             <p>Billede her???? </p>
+            <p>Telefon: <a href="tel:12345678">12345678</a></p>
             <p>Kontakt os på mail <a href="mailto:info@taetpaadk.dk">heltetpaa@gmail.com</a></p>
         </section>
+        
+        <section class="kontakt-section">
+            <h2>Send os en besked</h2>
+            <form class="kontakt-form" action="mailto:heltetpaa@gmail.com" method="post" enctype="text/plain">
+                <label for="navn">Navn</label>
+                <input type="text" id="navn" name="navn" placeholder="Dit navn" required>
 
-        <section class="section-text" id="about">
-            <h2>Skriv bla bla</h2>
-            <p>yeeeehaaaa blabla</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, sint fuga possimus hic ipsum maxime ipsam odit incidunt aliquam accusamus quos. 
-                Repudiandae quibusdam perferendis esse odio maiores iure, quia mollitia.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, sint fuga possimus hic ipsum maxime ipsam odit incidunt aliquam accusamus quos. 
-                Repudiandae quibusdam perferendis esse odio maiores iure, quia mollitia.
-            </p>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" placeholder="din@mail.dk" required>
+
+                <label for="besked">Besked</label>
+                <textarea id="besked" name="besked" rows="6" placeholder="Skriv din besked her..." required></textarea>
+
+                <button type="submit" class="book-knap">SEND</button>
+            </form>
         </section>
-
     </main>
 
     <footer>
