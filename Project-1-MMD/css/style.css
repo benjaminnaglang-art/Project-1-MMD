@@ -225,8 +225,13 @@ h4 {
     max-width: auto;
 }
 
-
 .galleri-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.galleri-container-carousel {
     display: flex;
     gap: 12px;
     overflow-x: auto;
