@@ -55,12 +55,12 @@ header {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #e86f6f;
+    background-color: #8A9A86;
     transition: width 0.25s ease;
 }
 
 .navbar__link:hover {
-    color: #e86f6f;
+    color: #8A9A86;
 }
 
 .navbar__link:hover::after {
@@ -72,6 +72,11 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 0 2em 2em;
+}
+
+.hero-content{
+    align-items: center;
+    justify-content: center;
 }
 
 .hero {
@@ -93,9 +98,40 @@ main {
     margin-top: 0;
 }
 
-.hero-content{
-    
+.search-box {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em;
+  gap: 32px; 
 }
+
+.search-box input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-style: italic;
+}
+
+.search-box button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #8A9A86;
+  color: white;
+  border: 1px solid #8A9A86;
+  border-radius: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.search-box button:hover {
+  background-color: #5d9a4e;
+}
+
 
 .book-knap {
     display: inline-block;
@@ -105,7 +141,10 @@ main {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    transition: background 0.2s;
+}
+
+.book-knap:hover {
+  background-color: #5d9a4e;
 }
 
 .hero h1,
