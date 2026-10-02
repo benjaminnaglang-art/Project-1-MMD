@@ -1,6 +1,6 @@
 * body {
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F9F6F0;
@@ -55,7 +55,7 @@ header {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #8A9A86;
+    background-color: #9FB49A;
     transition: width 0.25s ease;
 }
 
@@ -98,6 +98,23 @@ main {
     margin-top: 0;
 }
 
+.hero-omos-banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .search-box {
   display: flex;
   max-width: 1000px;
@@ -120,7 +137,7 @@ main {
   display: inline-block;
   font-weight: 600;
   padding: 10px 20px;
-  background: #8A9A86;
+  background: #9FB49A;
   color: #202020;
   text-decoration: none;
   border-radius: 20px;
@@ -128,13 +145,13 @@ main {
 }
 
 .book-nu:hover {
-  background-color: #5d9a4e;
+  background-color: #8A9A86;
 }
 
 .book-knap {
     display: inline-block;
     padding: 10px 20px;
-    background: #8A9A86;
+    background: #9FB49A;
     color: #202020;
     text-decoration: none;
     border-radius: 6px;
@@ -142,11 +159,20 @@ main {
 }
 
 .book-knap:hover {
-  background-color: #5d9a4e;
+  background-color: #8A9A86;
+}
+
+.hero h1{
+    font-size: 70px;
 }
 
 .hero h1,
 .hero p {
+    color: #F9F6F0;
+}
+
+.hero-booknu h1,
+.hero-booknu p {
     color: #F9F6F0;
 }
 
@@ -158,6 +184,18 @@ main {
     width: 100%;
     max-width: 600px;
     border-radius: 20px;
+    margin-top: 1em;
+}
+
+.section-text-book{
+    background-color: #F9F6F0;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 h1, h2 {
@@ -191,7 +229,7 @@ footer {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 90px;
     width: auto;
 }
 
@@ -206,19 +244,16 @@ h4 {
     line-height: 0.5px;
 }
 
+.mere-info p, .mere-info a{
+    color: #F9F6F0;
+}
+
 .footer-end {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 8px;
-}
-
-.titel {
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .galleri-section {
@@ -246,7 +281,7 @@ h4 {
     flex: 0 0 250px;
     scroll-snap-align: start;
     position: relative;
-    background-color: #8A9A86;
+    background-color: #9FB49A;
     border-radius: 15px;
     padding: 8px;
     display: flex;
@@ -299,11 +334,15 @@ h4 {
 }
 
 .video video {
-    width: 100%;
+    width: auto;
     height: auto;
     display: block;
     border-radius: 20px;
     padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 1em;
+    max-width: 600px;
+    text-align: center;
 }
 
 .kontakt-section {
@@ -317,7 +356,7 @@ h4 {
     flex-direction: column;
     gap: 8px;
     padding: 1.5em;
-    background-color: #8A9A86;
+    background-color: #9FB49A;
     border-radius: 15px;
 }
 
@@ -329,7 +368,7 @@ h4 {
 .kontakt-form input,
 .kontakt-form textarea {
     width: 95%;
-    padding: 10px 12px;
+    padding: 8px 12px;
     font-family: inherit;
     font-size: 16px;
     color: #202020;
@@ -337,6 +376,7 @@ h4 {
     border: 2px solid transparent;
     border-radius: 10px;
     outline: none;
+    opacity: 50%;
 }
 
 .kontakt-form input:focus,
@@ -354,4 +394,246 @@ h4 {
     border: none;
     cursor: pointer;
     font-family: inherit;
+}
+
+.oplevelser {
+    width: 100%;
+    max-width: 900px;
+    padding-top: 2em;
+}
+
+.oplevelse-item {
+    background-color: #F9F6F0;
+    padding: 1.5em;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.oplevelse-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.oplevelse-item h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #873F2B;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.indhold {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.item-img {
+    width: 40%;
+    flex-shrink: 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.oplevelse-tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.oplevelse-tekst p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.pris {
+    display: flex;
+    flex-direction: column;
+    background-color: #9FB49A;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.oplevelse-tekst .pris h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #202020;
+    margin: 0;
+}
+
+.oplevelse-tekst .pris p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.oplevelse-tekst .book-knap {
+    align-self: flex-start;
+    background-color: #873F2B;
+    color: #F9F6F0;
+    border-radius: 20px;
+}
+
+.oplevelse-tekst .book-knap:hover {
+    background-color: #6b3121;
+}
+
+.book-section {
+    width: 100%;
+    max-width: 600px;
+}
+
+.book-and-pay {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.book-and-pay input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #202020;
+    background-color: #f5f5f5;
+    border: 1px solid #9FB49A;
+    border-radius: 20px;
+    outline: none;
+}
+
+.book-and-pay input:focus {
+    border-color: #9FB49A;
+}
+
+.book-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.book-btn {
+    flex: 1 1 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #202020;
+    background-color: #9FB49A;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.book-btn:hover {
+    background-color: #8A9A86;
+}
+
+.review-section {
+    display: flex;
+    gap: 12px;
+}
+.review {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 340px;
+    margin: 1em 0 20px;
+    padding: 24px 20px;
+    background-color: #9FB49A;
+    border-radius: 24px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: #202020;
+}
+
+.review-logo {
+    width: auto;
+    height: 30px;
+}
+
+.review-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-stars {
+    color: #E07B4C;
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin: 16px 0 8px;
+}
+
+.review-p {
+    color: #F9F6F0;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 0 0 8px;
+}
+
+.review-navn {
+    color: #873F2B;
+    font-weight: 600;
+    margin: 0;
+}
+
+.ikoner {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    height: 100px;
+    width: auto;
+    float: right;
+}
+
+.contact-info {
+    line-height: 1;
+}
+
+.contact-info a {
+    color:#202020
+}
+
+.socialmedia {
+    margin-top: 1px;
+    height: 35px;
+    width: auto;
+}
+
+.hero-tak-foratsemed {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
 }

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Om Os</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,54 +15,76 @@
                 <li><a href="index.html" class="navbar__link">Hjem</a></li>
                 <li><a href="omos.html" class="navbar__link">Om os</a></li>
                 <li><a href="kontakt.html" class="navbar__link">Kontakt</a></li>
+                <li><a href="udforsk.html" class="navbar__link">Udforsk</a></li>
+                <li><a href="bookandreserve.html" class="navbar__link">BOOK NU</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero-omos">
-        <section class="titel section-text">
-            <h1>Hvem er vi?</h1>
-            <p>Vi er tre online studerende fra IBA Erhversakademi Kolding. Vi er to der bor i Kolding og én som bor i Tarm.
-                Vi elsker at drikke kaffe og klage over ting der ikke duer for os.
-            </p>
-            <p>Derfor ønsker vi at give hvem som helst en god oplevelse i Danmark. 
-                Tæt på hinanden som familie, venner eller andet, men også helt tæt på vores idylliske Danske kultur!
-            </p>
-         </section>
-            <div class="video">
-             <video src="video/Rick_Astley_-_Never_Gonna_Give_You_Up_dQw4w9WgXcQ.mp4" controls preload="metadata"></video>
+        <section class="hero-omos-banner">
+            <video class="hero-video" autoplay muted loop playsinline preload="auto">
+                <source src="video/herovideo3.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section>
+            <div class="hero-omos">
+                <section class="section-text">
+                    <h1>Hvem er vi?</h1>
+                    <p>Helt tæt på betyder tæt på hinanden og tæt på Danmark.
+                        Vi tror på, at de bedste ferier ikke behøver at være langt væk.
+                        Når du holder ferie i eget land, får du mere tid sammen med dem, du holder af, du opdager lokale oplevelser, og du sparer klimaet for lange rejser.</p>
+                    <p>Vi er tre online studerende fra IBA Erhversakademi Kolding. Vi er to der bor i Kolding og én som bor i Tarm.
+                        Vi elsker at drikke kaffe og klage over ting der ikke duer for os.
+                    </p>
+                </section>
             </div>
-        </div>
+        </section>
 
         <section class="section-text">
-            <h2>Om os</h2>
-            <p>Helt tæt på er bookingbureau blabla</p>
-            <p>Du kan lære mere om os på <a href="https://visitdenmark.dk" target="_blank" rel="noopener noreferrer">Visit Denmark</a>.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, sint fuga possimus hic ipsum maxime ipsam odit incidunt aliquam accusamus quos. 
-                Repudiandae quibusdam perferendis esse odio maiores iure, quia mollitia.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, sint fuga possimus hic ipsum maxime ipsam odit incidunt aliquam accusamus quos. 
-                Repudiandae quibusdam perferendis esse odio maiores iure, quia mollitia.
-            </p>
+            <h2>Vores værdier</h2>
+                <h3>Bæredygtighed</h3> 
+                    <img src="img/icon/sprout.png" alt="Bæredygtighed ikon" class="ikoner">
+                    <p>
+                        Helt Tæt På er et bookingbureau med en markant grøn profil, der samler oplevelser, aktiviteter og ferieophold i hele Danmark.
+                        Når du holder ferie i eget land, sparer du klimaet for lange rejser, og du opdager samtidig, hvor meget der findes lige uden for døren.
+                    </p>
+                    <p>
+                        Vi støttes af Visit Denmark. Du kan lære mere om dem på
+                        <a href="https://visitdenmark.dk" target="_blank" rel="noopener noreferrer">Visit Denmark</a>.
+                    </p>
+
+                <h3>Samvær</h3>
+                    <img src="img/icon/logo 2.png" class="ikoner">
+                    <p>
+                        Færre timer på farten giver mere tid til det, ferien handler om. Hos Helt tæt på skal du
+                        kunne bruge kræfterne på kvalitetstid med familie og venner i stedet for på transport.
+                    </p>
+
+                <h3>Lokale oplevelser</h3>
+                    <p>
+                        Vi arbejder sammen med lokale udbydere, så du kan booke oplevelser, der gør hver egn af landet unik.
+                    </p>
         </section>
         
         <section>
             <h2>Vores ansatte</h2>
-                <div class="galleri-container">
-                    <div class="galleri-box">
-                        <img src="/img/P-ben.jpg" class="galleri" alt="Ben">
-                        <h2>Ben</h2>
+                <div class="galleri-section">
+                    <div class="galleri-container">
+                        <div class="galleri-box">
+                            <img src="/img/P-ben.jpg" class="galleri" alt="Ben">
+                            <h2>Ben</h2>
+                        </div>
+                        <div class="galleri-box">
+                            <img src="/img/P-mat.jpg" class="galleri" alt="Mat">
+                            <h2>Mathilde</h2>
+                        </div>
+                        <div class="galleri-box">
+                            <img src="/img/P-mie.jpg" class="galleri" alt="Mie">
+                            <h2>Mie</h2>
+                        </div>
                     </div>
-                    <div class="galleri-box">
-                        <img src="/img/P-mat.jpg" class="galleri" alt="Mat">
-                        <h2>Mat</h2>
-                    </div>
-                    <div class="galleri-box">
-                        <img src="/img/P-mie.jpg" class="galleri" alt="Mie">
-                        <h2>Mie</h2>
-                    </div>
-                </div>
+                </div>    
             </section>
 
     </main>
@@ -72,7 +95,12 @@
             <p>Telefon: <a href="tel:12345678">12345678</a></p>
             <p>Email: <a href="mailto:info@taetpaadk.dk">heltetpaa@gmail.com</a></p>
             <p>Adresse: <a href="https://www.google.com/maps/place/Eksempelgade+1,+1234+Byen" target="_blank" rel="noopener noreferrer">Eksempelgade 1, 1234 Byen</a></p>
-            
+            <a href="https://www.instagram.com/ibakolding/" target="_blank">
+                <img src="img/icon/instagram.png" class="socialmedia">
+            </a>
+            <a href="https://www.facebook.com/IBAErhvervsakademiKolding" target="_blank">
+                <img src="img/icon/facebook.png" class="socialmedia">
+            </a>
         </div>
         
         <div class="footer-end">
